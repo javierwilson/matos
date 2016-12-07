@@ -27,6 +27,8 @@ def operation_list(request):
             result = 0
             numbers = list(serializer.validated_data['numbers'])
             operation = serializer.validated_data['operation']
+            if operation == 'suma':
+                result = sum(numbers)
             if operation == 'add':
                 result = sum(numbers)
             if operation == 'mult':
