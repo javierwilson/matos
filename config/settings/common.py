@@ -103,7 +103,7 @@ MANAGERS = ADMINS
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='postgres:///matos'),
+    'default': env.db('DATABASE_URL', default='postgres://matos:matos@/matos'),
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
